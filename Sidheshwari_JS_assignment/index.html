@@ -1,0 +1,132 @@
+<!DOCTYPE html>  
+<html>
+<head>  
+	  <title>BigBasket</title>         
+	  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/BigBasket.css">   
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>     
+    
+</head>     
+      
+<body class="bg">                           
+   <div id="bodyWrap">                            
+             
+      <header id="topHeader">                  
+       	  <nav id="menuBar">     
+                <ul id="list">
+       	  	   	 	 <li><a onclick="openNav()" href="#" class="fa fa-bars"></a></li>
+       	  	   	 	 <li><a onclick="openLogin()" href="#" class="fa fa-user-o"></a></li> 
+                   <li><a href="#"><img src="bigBB.png" alt="Bblogo"></a></li>     
+       	  	   	 	  <li><a href="#" class="fa fa-map-marker"></a></li>           
+       	  	   	 	  <li><a href="#" class="fa fa-shopping-cart"></a></li>    
+                </ul>
+       	   </nav>   
+       	   <div id="searchBar">  
+       	       <input type="text" placeholder="Search for Products..." 
+                   name="searchBar" id="search"  onkeyup="autoSearch()">   
+              <!--  <div id="searchIcon" class="fa fa-search"></div>   -->      
+           </div>       
+      </header>                    
+
+  <div id="container">              
+                   
+              <img class="slides"  src="./photos1/sm_img1.jpg" alt="basket">       
+              <img class="slides" src="./photos1/sm_frozen-food1.jpg" alt="frozen-food">    
+              <img class="slides" src="./photos1/bbig1.jpg" alt="iStock basket">           
+              <img class="slides" src="./photos1/sm_baby1.jpg" alt="baby">                
+              <button  class="btn"  id="btn1">&#10094;</button>          
+              <button  class="btn"  id="btn2">&#10095;</button>         
+  </div>           
+          
+  <marquee id="FlyingText" behavior="alternate"> Welcome to Bigbasket 
+       </marquee>              
+<div id="myNav" class="overlay">           
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="overlay-content">        
+             <a href="BigBasket.html">HOME</a>    
+             <a href="#">SHOP BY CATEGORY</a>             
+             <a href="logIn.html">Fruits & vegetables</a>
+             <a href="logIn.html">Grocery & stepales</a>   
+             <a href="logIn.html">Bread Dairy & Eggs</a>
+             <a href="logIn.html">Beverages</a>    
+             <a href="logIn.html">Personal Care</a>           
+             <a href="logIn.html">Household</a>      
+             <a href="logIn.html">OFFERS</a>
+             <a href="logIn.html">BB speciality stores</a>          
+       </div>  
+</div>                                       
+   
+
+<div id="myLogin" class="overLogin">     
+      <a href="javascript:void(0)" class="close" onclick="closeLogin()">&times;</a>
+         <div class="overLogin-content">    
+             <a href="logIn.html">click to Login or signUp</a>                        
+                       
+        </div>             
+</div>                                
+  
+     
+<div class="images">   
+   <a href="logIn.html"> 
+    <figure class="figure">
+      <img  class="img"  src="photos/tea.jpg" alt=”Photo” height="80px" width="70px" >
+      <figcaption name="Tea" class="figCap">Tea <br> 100 Rs</figcaption>    
+    </figure>      
+   </a>         
+</div>   
+
+<div class="images">
+   <a href="logIn.html">    
+    <figure class="figure">
+      <img class="img" src="photos/coffee.jpg" alt=”Photo” height="80px" width="70px"> 
+      <figcaption name="Coffee" class="figCap">coffe <br> 150 Rs </figcaption>          
+    </figure>   
+   </a>
+</div>     
+
+<div class="images">      
+  <a href="logIn.html"> 
+   <figure class="figure">
+    <img class="img" src="photos/greenTea.jpg" alt="Photo" height="80px" width="70px"> 
+    <figcaption name="GreenTea" class="figCap">GreenTea <br> 250 Rs</figcaption>
+   </figure>
+  </a>   
+</div>      
+ 
+
+ <div class="images">    
+  <a href="logIn.html">   
+    <figure class="figure">
+    <img class="img" src="photos/iphone7.jpg" alt="Photo" height="80px" width="70px">  
+    <figcaption name="Iphone7" class="figCap">iphone7 <br> 45000 Rs </figcaption>     
+  </figure>   
+  </a>   
+</div>  
+
+
+ <div class="images">    
+  <a href="logIn.html">    
+    <figure class="figure">  
+      <img class="img" src="photos/samsung.jpg" alt="Photo" height="80px" width="70px"> <figcaption name="samsung" class="figCap">samsung <br>15000 Rs</figcaption>      
+    </figure>
+  </a>      
+</div>    
+
+<div class="images">    
+  <a href="logIn.html">       
+    <figure class="figure">  
+     <img  class="img" src="photos/asus_zen3.jpg" alt="Photo" height="80px" width="70px" >        
+      <figcaption  name="asuszen3" class="figCap">asus_zen3 <br> 13000 Rs</figcaption>  
+    </figure>
+  </a>     
+</div>            
+<div class="float"></div>           
+        
+</div>         
+  <script type="text/javascript" src="./js/BigBasket.js"></script>         
+</body>   
+</html>      

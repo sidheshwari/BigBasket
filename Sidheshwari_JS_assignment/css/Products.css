@@ -1,0 +1,135 @@
+
+ * {    
+         -moz-box-sizing: border-box;
+         -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+         margin: 0;     
+         padding: 0;  
+      }
+      body{
+      	 background-color:#195415;    
+          }
+      #showCart{  
+      	        
+          font-size: 40px;    
+          color: #fff;
+     }
+    .clearAll{ 
+              width: 14%;
+              padding: 1% 0 3% 0;
+              font-size: medium;
+              font-weight: bolder;  
+             }
+      .images .img {
+                  max-width: 100%;
+                 -moz-transition: all 0.2s; 
+                 -webkit-transition: all 0.2s;   
+                  transition: all 0.2s;   
+                 }
+       .images:hover .img {  
+                            -moz-transform: scale(1.2);  
+                            -webkit-transform: scale(1.2);  
+                             transform: scale(1.2);      
+                          }       
+       /*  End of zoom   */
+
+    .images{
+              width: 34%; 
+              padding:25px;
+              background-color: #C9C9E7; 
+              border-radius: 15px; 
+              margin-top: 2%;          
+           }   
+    .figCap{  
+                  font-size: xx-large;
+                  
+           } 
+    .figCap:hover{  
+                        color: red;  
+                  }
+ 
+    
+
+    table{
+                font-size: 15px;      
+                border: 2px solid lightblue; 
+         }   
+            th,td{
+                text-align: center;  
+                padding: 10px;
+                border: 2px solid black; 
+            }
+            td{
+                color:white; 
+            }   
+            #table{
+                margin:0px auto;
+            }
+            button{
+                text-align: center;
+            }
+            input{
+                border-radius: 0px;
+                border: none;
+                width: 100px;  
+                height: 15px;
+            }
+      .addToCart,.removeFromCart{ 
+                   border: 3px solid #a1a1a1;
+                   padding: 5px 16px 41px 10px;
+                   background: #dddddd;
+                   width: 250px;
+                   border-radius: 15px;   
+                   font-size: 200%;   
+                   margin-top: 2%;   
+
+                }     
+       .img{   
+              width: 200px;
+              height: 150px; 
+              background-size: cover;  
+              background-repeat: no-repeat;     
+              background-position: center;  
+              margin-left: 19%;  
+              margin-bottom: 5%;       
+            }
+       #tea{
+              background-image: url("../photos/tea.jpg");  
+            }    
+       #coffee{
+                  background-image: url("../photos/coffee.jpg") 
+              }
+      #GreenTea{
+                  background-image: url("../photos/greenTea.jpg")    
+               }
+      #samsung{
+                 background-image: url("../photos/samsung.jpg");
+              }
+       #asus_zen3{
+                 background-image: url("../photos/asus_zen3.jpg"); 
+              }
+      #iphone7{  background-image: url("../photos/iphone7.jpg"); 
+                 
+              }
+      .addToCart:hover{  
+                            background-color:#17174E;
+                            color:white;    
+                       }
+    #menuBar ul li {
+                      width: 19%;       
+                   }  
+                   
+                  
+    
+    .productContainer {  
+    	position: relative;
+    	top:5%;
+    	left:0%; 
+    	/*float: left; */   
+    }      
+   
+
+
+ 
+ 
+

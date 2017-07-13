@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>   
+<head>  
+
+ <meta charset="utf-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="./css/BigBasket.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <!-- <script type="text/javascript" src="BigBasket.js"></script>  -->   
+    <link rel="stylesheet" type="text/css" href="./css/logIn.css">      
+    <script type="text/javascript" src="./js/logIn.js"></script>               
+</head>   
+<body>            
+   
+   <header id="topHeader">                        
+          <nav id="menuBar">         
+                <ul id="list">     
+                      <li><a onclick="openNav()" href="#" class="fa fa-bars"></a></li>
+                      <li><a onclick="openLogin()" href="#" class="fa fa-user-o"></a></li> <li><a href="#"><img src="./photos1/bigBB.png" alt="Bblogo"></a></li>      
+                      <li><a href="#" class="fa fa-map-marker"></a></li>        
+                      <li><a href="#" class="fa fa-shopping-cart"></a></li>    
+                </ul>
+           </nav>     
+             
+   </header> 
+   
+   
+         
+<div id="container">           
+          <!-- <figure>  --> 
+             <button  id="signupBtn" >Signup</button>           
+             <button  id="loginBtn" >Login</button>        
+              <p class="clear"></p> 
+
+              <div class="slides" id="slide1">
+                  <h1>Get 20% off</h1>    
+              </div>  
+
+              <div class="slides" id="slide2" >
+                  <h1>flat 35% off</h1>    
+              </div>
+
+              <div class="slides" id="slide3" >
+                  <h1>Buy1-Get1 offer</h1>     
+              </div>
+
+              <div class="slides" id="slide4" >
+                  <h1>Get 20% off</h1>     
+              </div>
+
+              <div class="slides" id="slide5" >
+                  <h1>Beautiful BrideDress</h1>      
+              </div>
+
+              <div class="slides" id="slide6" >
+                  <h1>Get 20% off</h1>    
+              </div>  
+
+              <div class="slides" id="slide7" >
+                  <h1>Kids Wear</h1>         
+              </div>
+
+            <!--   <img class="slides"  src="fashion1.jpg" alt="basket">       
+              <img class="slides" src="fashion2.jpg" alt="frozen-food">    
+              <img class="slides" src="fashion6.jpg" alt="iStock basket">           
+              <img class="slides" src="fashion7.jpg" alt="baby">
+              <img class="slides" src="fashion3.jpg" alt="frozen-food"> 
+              <img class="slides" src="fashion4.jpg" alt="frozen-food">      
+              <img class="slides" src="fashion5.jpg" alt="frozen-food"> 
+              <h1>Get 20% off</h1>  -->         
+ </div> 
+                     
+
+<!-- signUp form -->     
+
+<div id="signupForm" class="modal">     
+  <span id="closeSignup"  class="close" title="Close Modal">×</span>  
+  <form  name="signUp" class="modal-content animate" action="logIn.html">                   
+   
+     <div class="container">   
+      <label><b>UserName</b></label>       
+      <input type="text" placeholder="Enter UserName" name="uName" >          
+      <div id="name_error" class="val_error">  </div>  
+       
+    <label><b>Password</b></label>     
+    <input  id="password" type="password" placeholder="Enter Password" name="password" ><div id="password_error" class="val_error"> </div>             
+
+      <label><b>confirm Password</b></label>   
+      <input id="confirm_password" type="password" placeholder="Repeat Password" name="confirm_password">    
+      <div id="confirmPassword_error" class="confirmPassword_error">  </div>        
+      <input type="checkbox" checked="checked"> Remember me
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+
+      <div class="clearfix">   
+        <button id="cancelSignup"  type="button"  class="cancelbtn">Cancel</button>  
+<button id="submitSignup" name="submitSignup" type="submit" class="signupbtn">SignUp</button>          
+      </div>        
+    </div>
+  </form>
+</div>
+ 
+<!-- logIn form -->        
+<div id="loginForm" class="modal">         
+     
+  <form name="logIn" class="modal-content animate" method="get" action="">             
+    <div class="imgcontainer">  
+      <span id="closeLogin" class="close" title="Close Modal">&times;</span>  
+      <img src="profile.png" alt="Avatar" class="avatar">  
+    </div>  
+     
+    <div class="container">  
+      <label><b>Username</b></label>
+      <input id="loginUname" type="text" placeholder="Enter Username" 
+       name="loginUname">  
+      <div id="loginUserName_error" class="val_error"> </div>              
+
+      <label><b>Password</b></label>
+      <input id="loginPassword"  type="password" placeholder="Enter Password"         name="loginPassword">       
+      <div id="loginPassword_error" class="val_error"> </div> 
+   <button id="submitLogin" name="submitLogin" type="submit" data-inline="true" >Login
+    </button>              
+      <input type="checkbox" checked="checked"> Remember me                      
+    </div>    
+
+    <div class="container" style="background-color:#f1f1f1">  
+      <button  id="cancelLogin"  type="button"  class="cancelbtn">Cancel</button>  
+      <span class="psw">Forgot <a href="#">password?</a></span> 
+    </div>          
+  </form>
+</div>    
+   
+</body>
+</html> 

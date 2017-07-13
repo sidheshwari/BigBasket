@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>Products BB</title>    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" type="text/css" href="./css/BigBasket.css">   
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+     <link rel="stylesheet" type="text/css" href="./css/Products.css">
+     <script type="text/javascript" src="./js/product.js"></script> 
+      <script type="text/javascript" src="./js/BigBasket.js"></script>       
+     
+<script type="text/javascript">
+       
+function openNav() { 
+    document.getElementById("myNav").style.width = "100%";
+}   
+
+function closeNav() {  
+    document.getElementById("myNav").style.width = "0%";                    
+} 
+
+function openLogin() {  
+          document.getElementById("myLogin").style.height = "23%";          
+}         
+   
+function closeLogin() {
+    document.getElementById("myLogin").style.height = "0%";            
+}  
+</script>
+
+</head>          
+
+<body >          
+
+ <header id="topHeader">              
+          <nav id="menuBar">     
+                <ul id="list">
+                      <li><a onclick="openNav()" href="#" class="fa fa-bars"></a></li>
+                      <li><a onclick="openLogin()" href="#" class="fa fa-user-o"></a></li> <li><a href="#"><img src="bigBB.png" alt="Bblogo"></a></li>   
+                      <li><a href="#" class="fa fa-map-marker"></a></li> 
+                    <li><a href="#" id="shop_cart" class="fa fa-shopping-cart">
+                           <span id="itemCount"></span>  
+                        </a>      
+                    </li>            
+                </ul>     
+           </nav>    
+</header>      
+ 
+ <div id="myNav" class="overlay">           
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="overlay-content">        
+             <a href="BigBasket.html">HOME</a>    
+             <a href="#">SHOP BY CATEGORY</a>             
+             <a href="#" id="fruits">Fruits & vegetables</a>
+             <a href="#">Grocery & stepales</a>   
+             <a href="#">Bread Dairy & Eggs</a>
+             <a href="#">Beverages</a>    
+             <a href="#">Personal Care</a>           
+             <a href="#">Household</a>        
+             <a href="#">OFFERS</a>
+             <a href="#">BB speciality stores</a>            
+       </div>  
+</div
+
+
+<div id="showTheCart">          
+  <ul id="showCart">         
+  </ul> 
+  <input class="clearAll" type="button" id="clearAll" value="clearAll"></input>     
+</div>           
+   
+<div class="productContainer">    
+
+<div class="images">
+    <figure>
+       <div class="img" id="tea"></div>      
+       <figcaption class="figCap">Tea <br> 100 Rs</figcaption>    
+                        
+    </figure>  
+  <input class="addToCart"  data-name="Tea" data-price="100"    
+         type="button" value="AddToCart"> 
+   <input class="removeFromCart" id="Tea" data-name="Tea" data-price="100"      
+         type="button" value="Remove">           
+    
+</div>  
+  
+  
+<div class="images">
+       
+    <figure> 
+       <div class="img" id="coffee"></div>     
+       
+    <figcaption class="figCap">coffe <br>150 Rs</figcaption>
+    <!-- <figcaption class="figCap">150 Rs </figcaption> -->       
+    </figure>
+    <input class="addToCart"  data-name="Coffee" data-price="150"   
+    type="button" value="AddToCart" />  
+   <input class="removeFromCart" id="Coffee" data-name="Coffee" data-price="150"     
+    type="button" value="Remove" />    
+    
+</div>  
+
+<div class="images">         
+ 
+    <figure>
+         <div class="img" id="GreenTea"></div> 
+      
+      <figcaption class="figCap">GreenTea <br> 250 Rs</figcaption>  
+       <!-- <figcaption class="figCap">250 Rs </figcaption>   -->   
+     </figure>  
+     <input  class="addToCart"  data-name="GreenTea" data-price="250" 
+      type="button" value="AddToCart" />  
+      <input  class="removeFromCart" id="GreenTea" data-name="GreenTea" data-price="250" 
+      type="button" value="Remove" />    
+  
+</div>     
+ 
+
+ <div class="images">           
+       
+    <figure>     
+        <div class="img" id="iphone7"></div>   
+          
+      <figcaption class="figCap">iphone7<br> 45000 Rs </figcaption>   
+     <!--   <figcaption class="figCap">45000 Rs </figcaption> -->   
+    </figure>
+    <input class="addToCart"   data-name="iphone7" data-price="45000"   
+     type="button" value="AddToCart"/>     
+     <input class="removeFromCart" id="iphone7" data-name="iphone7" data-price="45000"   
+     type="button" value="Remove"/>         
+
+</div>         
+
+
+ <div class="images">      
+    
+    <figure>      
+       <div class="img" id="samsung"></div>  
+         
+      <figcaption class="figCap">samsung<br>15000 Rs</figcaption>    
+          
+    </figure>
+    <input class="addToCart"   data-name="Samsung" data-price="15000"   
+     type="button" value="+" /> 
+  <input class="removeFromCart" id="Samsung"  data-name="Samsung" data-price="15000"   
+     type="button" value="-" />             
+</div>                
+        
+<div class="images">          
+   
+    <figure>
+       <div class="img" id="asus_zen3"></div>    
+       
+      <figcaption class="figCap">asus_zen3<br>15000 Rs</figcaption> 
+      <!-- <figcaption class="figCap">13000 Rs</figcaption>  -->         
+    </figure>
+    <input class="addToCart"  data-name="AsusZen3" data-price="1300"   
+      type="button" value="AddToCart" />  
+     <input class="removeFromCart" id="AsusZen3" data-name="AsusZen3" data-price="1300"   
+      type="button" value="Remove" />         
+          
+</div> 
+</div>  
+  
+
+<div class="float"></div>           
+</body>
+</html>   
+
+
+
+
